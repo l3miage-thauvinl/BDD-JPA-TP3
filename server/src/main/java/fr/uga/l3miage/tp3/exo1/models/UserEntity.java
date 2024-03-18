@@ -24,4 +24,6 @@ public class UserEntity {
     @OneToMany
     @JoinColumn(name = "name")
     private Set<PlaylistEntity> playlistEntities;
+
+
 }
