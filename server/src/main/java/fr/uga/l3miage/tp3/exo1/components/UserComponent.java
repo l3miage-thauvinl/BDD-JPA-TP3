@@ -32,7 +32,7 @@ public class UserComponent {
     public void deleteUser(String name){
         userRepository.deleteById(name);
     }
-    public Set<UserEntity> getUserIsInDOmain(String domaine){
+    public Set<UserEntity> getUserIsInDomain(String domaine){
         return userRepository.findAllByMailContaining(domaine);
     }
 
