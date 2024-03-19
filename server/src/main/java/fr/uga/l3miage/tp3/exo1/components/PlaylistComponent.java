@@ -29,4 +29,7 @@ public class PlaylistComponent {
         playlistEntity.setSongEntities(songEntities);
         return playlistRepository.save(playlistEntity);
     }
+    public Set<PlaylistEntity> getPlaylistContain(SongEntity songEntity){
+        return playlistRepository.findAllBySongEntitiesContaining(songEntity);
+    }
 }
